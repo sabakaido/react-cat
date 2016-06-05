@@ -15,6 +15,10 @@ app.get("/", function(req, res) {
 	res.sendFile(__dirname + '/index.html')
 })
 
+app.get("/get/CatApartment", function(req, res) {
+	res.sendFile(__dirname + '/example/cat.json')
+})
+
 app.listen(port, function(error) {
 	if (error) {
 		console.log(error)

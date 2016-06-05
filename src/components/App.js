@@ -10,14 +10,16 @@ export default class App extends Component {
 			<div>
 			    <Header />
 			    <GridLayout
+			    	append={this.props.append}
 			    	gridView={this.props.gridView}
-			    	receiveView={this.props.receiveView} />
+			    	getViewList={this.props.getViewList} />
 			</div>
   		)
 	}
 }
 
 App.propTypes = {
-	receiveView: PropTypes.func.isRequired,
+	append: PropTypes.func.isRequired,
+	getViewList: PropTypes.func.isRequired,
 	gridView: PropTypes.array.isRequired
 }
