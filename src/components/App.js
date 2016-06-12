@@ -10,6 +10,7 @@ export default class App extends Component {
 			<div>
 			    <Header />
 			    <GridLayout
+			    	favorite={this.props.favorite}
 			    	append={this.props.append}
 			    	gridView={this.props.gridView}
 			    	getViewList={this.props.getViewList} />
@@ -19,6 +20,7 @@ export default class App extends Component {
 }
 
 App.propTypes = {
+	favorite: PropTypes.func.isRequired,	
 	append: PropTypes.func.isRequired,
 	getViewList: PropTypes.func.isRequired,
 	gridView: PropTypes.array.isRequired

@@ -2,6 +2,14 @@ import request from 'superagent'
 
 export const RECEIVE_VIEW = 'RECEIVE_VIEW'
 export const APPEND_VIEW = 'APPEND_VIEW'
+export const FAVORITE = 'FAVORITE'
+
+export function favorite(tile) {
+	return {
+		type: FAVORITE,
+		tile: tile
+	}
+}
 
 export function getViewList() {
 	return dispatch => {

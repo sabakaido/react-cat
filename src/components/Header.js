@@ -7,18 +7,11 @@ import IconMenu from 'material-ui/IconMenu'
 import MenuItem from 'material-ui/MenuItem'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
 
-const styles = {
-	appBar: {
-		height: "76px"
-	}
-}
-
 export default class Header extends Component {
 	render () {
 		return (
 			<AppBar
 			    title="ねこあつめ"
-			    style={styles.appBar}
 			    iconElementRight={
 				    <IconMenu
 				        iconButtonElement={
